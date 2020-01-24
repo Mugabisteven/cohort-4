@@ -1,0 +1,19 @@
+body {
+    background-color: burlywood;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  .blueParagraphs {
+    color: palegreen;
+  }
+
+  .redParagraphs {
+    color: red;
+  }
+
+  #standOut {
+    font-size: 30px;
+  }
