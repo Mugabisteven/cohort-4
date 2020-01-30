@@ -1,19 +1,7 @@
-body {
-    background-color: burlywood;
-  }
+.container > .row > .col-7 > p {
+  color: blue;
+}
 
-  p {
-    font-size: 15px;
-  }
-
-  .blueParagraphs {
-    color: palegreen;
-  }
-
-  .redParagraphs {
-    color: red;
-  }
-
-  #standOut {
-    font-size: 30px;
-  }
+.container-fluid > p {
+  color: red; 
+}
