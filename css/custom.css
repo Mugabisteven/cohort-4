@@ -1,7 +1,8 @@
-.container > .row > .col-7 > p {
-  color: blue;
+#slider-container {
+  padding-right: 0px;
+  padding-left: 0px;
 }
 
-.container-fluid > p {
-  color: red; 
+#services-container {
+  padding-top: 20px;
 }
