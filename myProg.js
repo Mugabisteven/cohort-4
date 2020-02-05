@@ -1,4 +1,4 @@
-function paye()
+function paye()//declaring the paye function
 {
     //This is the net pay for the worker
     let  netPaye = 2500000
@@ -18,4 +18,4 @@ function paye()
      //printing the takeHome amount in the console
      console.log(takeHome)
 }
- paye()
+ paye()//calls the paye function so it can show the results
