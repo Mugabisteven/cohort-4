@@ -8,8 +8,9 @@ function PAYE() {
     //calculate netPay
     let netPay = salary - taxAmount
 
-    console.log(taxAmount)
-    console.log(netPay)
+    
+    console.log("The tax amount is =" ,taxAmount)
+    console.log("THe net pay is =" ,netPay)
 }
 
 PAYE()
