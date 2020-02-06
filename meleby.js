@@ -10,7 +10,7 @@ function PAYE() {
 
     
     console.log("The tax amount is =" ,taxAmount)
-    console.log("THe net pay is =" ,netPay)
+    console.log("The net pay is =" ,netPay)
 }
 
 PAYE()
