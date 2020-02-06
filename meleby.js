@@ -1,16 +1,16 @@
-function PAYE() {
-    // declare salary and assign 15 million to it
-    let salary = 15000000
-    //declare tax and assign 30% to it 
-    let tax    = 30/100
-    //calculate the tax amount
-    let taxAmount = salary * tax
+//A function to calculate PAYE tax
+function PAYE(salary,taxRate) {
+    //assign the product of salary and tax rate to variable name taxAmount
+    let taxAmount = salary * taxRate
     //calculate netPay
     let netPay = salary - taxAmount
 
-    
+    //Print the tax amount
     console.log("The tax amount is =" ,taxAmount)
+    //Print the net pay
     console.log("The net pay is =" ,netPay)
 }
 
-PAYE()
+PAYE(10000000, 30/100)
+
+
