@@ -18,7 +18,9 @@ return greater
 return coursework
 
  }
+
 //declaring and initializing a function for average
+//i dont see initialising .....which function are we initializing
 function avg(a)
 {
     //calculating the average
