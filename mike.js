@@ -52,4 +52,4 @@ console.log(fmark)
 }
 fnal()
 
-//This is a set of functions to calculated the final marks through courseworks, tests and exams
+//This is a set of functions to calculate the final marks through courseworks, tests and exams
