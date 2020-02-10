@@ -69,4 +69,4 @@ and an avarage of two tests; the result of printed before
 furter manipulation through the average function.
 Finally, a percentage of the courseork and exam marks are 
 computed and added to achieve the Student's Mark out of 100%.
-Lastly; the Final Mark is also printed out.
+Lastly; the Final Mark is also printed out. */
