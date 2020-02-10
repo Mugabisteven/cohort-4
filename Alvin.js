@@ -1,3 +1,4 @@
+//Defined function tests
 function tests(test1,test2)
 {
    //Declared  greater and initalised it if statement is true go with test1 and if it is false go with test2
@@ -8,18 +9,18 @@ return greater
 
 }
 
-//function coursework() is calling function tests()
+//Function coursework() is calling function tests()
  function coursework(cswork)
  {
      //Declared coursework and intialised it with two parameters                           
  let coursework = cswork + tests(80,80)
- //printed out coursework 170
+ //Printed out coursework 170
  console.log(coursework)    
  //Exposed coursework to another function
 return coursework
 
  }
-//function avg() is calling function coursework()
+//Function avg() is invoking function coursework()
 function avg(a)
 {
     //Declared avg and intialised it
@@ -29,7 +30,7 @@ return avg
 
 }
 
-//function crsmark() is calling function avg()
+//Function crsmark() is invoking function avg()
 function crsmark(a)
 {
 
@@ -39,21 +40,21 @@ let exm = avg(2)*(a/100)
 }
 
 
-//function exam
+//Defined function exam
 function exam(a)
 {
-    
+  //Declared fexam and intialised it
 let fexam = (60/100)*a
 return fexam
 
 }
 
-//function fnal is calling function exam() and crsmark()
+//Function fnal is invoking function exam() and crsmark()
 function fnal()
 {
     
 let fmark = exam(75)+crsmark(40)
-//printed out fmark 79
+//Printed out fmark 79
 console.log(fmark)
 
 }
