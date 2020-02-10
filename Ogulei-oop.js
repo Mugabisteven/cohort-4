@@ -1,3 +1,6 @@
+/*Allthrugh, we are assignining differrent classes different kinds of objects with different properties.
+We are also posting the results to the browser's console.
+*/
 let animal={pet:"cat", aquatic:"fish", biggest:"elephant", flying:"bat", pouched:"wallaby"}
 console.log("this is a "+ animal.pet + ".")
 console.log("A " + animal.aquatic + ".")
