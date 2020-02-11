@@ -15,7 +15,7 @@ console.log(Rover.spaceCraft)
 console.log(Rover.operator)
 
 //Defining object Insects
-let Insects = {
+let Insect = {
     name:"bee",
     typeOfEye:"compound eyes",
     numberOfLegs:"3 pairs",
@@ -23,11 +23,11 @@ let Insects = {
     numberOfAntenna:2
 }
 //Printing the object properties
-console.log(Insects.name)
-console.log(Insects.typeOfEye)
-console.log(Insects.numberOfLegs)
-console.log(Insects.numberOfBodyParts)
-console.log(Insects.numberOfAntenna)
+console.log(Insect.name)
+console.log(Insect.typeOfEye)
+console.log(Insect.numberOfLegs)
+console.log(Insect.numberOfBodyParts)
+console.log(Insect.numberOfAntenna)
 
 //Defining object Footballer
 let Footballer = {
