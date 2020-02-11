@@ -104,20 +104,20 @@ userOne.cashlessBalance='UGX 13,000'
 userOne.destination='Acacia Mall'
 
 //Instance Two
-var userOne = new fsuser () 
-userOne.userName='Donald'
-userOne.phoneNo='+255-797-123456'
-userOne.phoneType='Samsung Galaxy S11'
-userOne.cashlessBalance='UGX 7,900'
-userOne.destination='Heights Apartments'
+var userTwo = new fsuser () 
+userTwo.userName='Donald'
+userTwo.phoneNo='+255-797-123456'
+userTwo.phoneType='Samsung Galaxy S11'
+userTwo.cashlessBalance='UGX 7,900'
+userTwo.destination='Heights Apartments'
 
 //Instance Three
-var userOne = new fsuser () 
-userOne.userName='Barbra'
-userOne.phoneNo='+253-797-123456'
-userOne.phoneType='iPhone 8 Plus'
-userOne.cashlessBalance='UGX 21,300'
-userOne.destination='British School'
+var userThree = new fsuser () 
+userThree.userName='Barbra'
+userThree.phoneNo='+253-797-123456'
+userThree.phoneType='iPhone 8 Plus'
+userThree.cashlessBalance='UGX 21,300'
+userThree.destination='British School'
 
 //OBJECT THREE to method & instance
 function fsparkingowner () {
@@ -137,19 +137,19 @@ ownerOne.parkingPlaces='3 Businesses"'
 ownerOne.bankDetails='Mercantile Bank 8967452301'
 
 //Instance Two
-var ownerOne = new fsparkingowner () 
-ownerOne.ownerName='Mutaaasa Kafeero'
-ownerOne.phoneNo='+256-414-453923'
-ownerOne.phoneType='One Plus One'
-ownerOne.parkingPlaces='19 Parking Areas"'
-ownerOne.bankDetails='Absa Bank 8967452301'
+var ownerTwo = new fsparkingowner () 
+ownerTwo.ownerName='Mutaaasa Kafeero'
+ownerTwo.phoneNo='+256-414-453923'
+ownerTwo.phoneType='One Plus One'
+ownerTwo.parkingPlaces='19 Parking Areas"'
+ownerTwo.bankDetails='Absa Bank 8967452301'
 
 //Instance Three
-var ownerOne = new fsparkingowner () 
-ownerOne.ownerName='Mary Poppins'
-ownerOne.phoneNo='+256-717-444423'
-ownerOne.phoneType='Samsung Galaxy Fold'
-ownerOne.parkingPlaces='9 Businesses'
-ownerOne.bankDetails='NC Bank 8967452301'
+var ownerThree = new fsparkingowner () 
+ownerThree.ownerName='Mary Poppins'
+ownerThree.phoneNo='+256-717-444423'
+ownerThree.phoneType='Samsung Galaxy Fold'
+ownerThree.parkingPlaces='9 Businesses'
+ownerThree.bankDetails='NC Bank 8967452301'
 
 console.log ("\nThank You\n")
