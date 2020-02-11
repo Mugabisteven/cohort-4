@@ -1,3 +1,4 @@
+/*
 //object oriented programming in js
 //Defining object Rover with attributes
 let Rover = {
@@ -72,6 +73,158 @@ console.log(Concrete.type)
 console.log(Conctete.aggregateRatio)
 console.log(Concrete.cementRatio)
 console.log(Concrete.strength)
-console.log(Concrete.steal)    
+console.log(Concrete.steal)  
+*/
+
+/*Defining objects and creating three instances of 
+the objects*/
+function rover(){
+    this.name
+    this.contractor
+    this.distanceCovered
+    this.spaceCraft
+    this.operator
+}
+
+var opportunity = new rover()
+opportunity.name= 'opportunity'
+opportunity.contractor= 'boeing'
+opportunity.distanceCovered='45.16km'
+opportunity.spaceCraft= 'rover'
+opportunity.operator= 'NASA'
+
+
+var spirit = new rover()
+spirit.name= 'spirit'
+spirit.contractor= 'boeing'
+spirit.distanceCovered='7.73km'
+spirit.spaceCraft= 'rover'
+spirit.operator= 'NASA'
+
+var curiosity = new rover()
+curiosity.name= 'curiosity'
+curiosity.contractor= 'boeing'
+curiosity.distanceCovered='22.21km'
+curiosity.spaceCraft= 'rover'
+curiosity.operator= 'NASA'
+
+
+function Footballer(){
+    this.name
+    this.age
+    this.height
+    this.weight
+    this.rating
+}
+
+var messi= new Footballer()
+messi.name= 'lionel messi'
+messi.age= 'age'
+messi.height= '170cm'
+messi.weight= '72kg'
+messi.rating= 94
+
+var ronaldo=new Footballer()
+ronaldo.name= 'cristino ronaldo'
+ronaldo.age= 35
+ronaldo.height = '187cm'
+ronaldo.weight= '83kg'
+ronaldo.rating= 93
+
+var neymar= new Footballer()
+neymar.name= 'neymar jr'
+neymar.age= 28
+neymar.height= '175cm'
+neymar.weight= '68kg'
+neymar.rating= 92
+
+
+
+function Insect(){
+    this.order
+    this.typeOfEye
+    this.numberOfBodyParts
+    this.numberOfLegs
+    this.numberOfAntenna
+}
+
+var bee= new Insect()
+bee.order= 'hymenoptera'
+bee.typeOfEye= 'compound'
+bee.numberOfBodyParts= 3
+bee.numberOfLegs= '3pairs'
+bee.numberOfAntenna= 2
+
+var grasshopper= new Insect()
+grasshopper.order= 'orthoptera'
+grasshopper.typeOfEye= 'compound'
+grasshopper.numberOfBodyParts= 3
+grasshopper.numberOfLegs= '3pairs'
+grasshopper.numberOfAntenna= 2
+
+var termite= new Insect()
+termite.order= 'blattodea'
+termite.typeOfEye= 'simple'
+termite.numberOfBodyParts= 2
+termite.numberOfLegs= '3pairs'
+termite.numberOfAntenna= '2'
+
+
+function CricketPlayer(){
+    this.full_name
+    this.age
+    this.role
+    this.batting
+    this.bowling
+}
+var kevin= new CricketPlayer()
+kevin.full_name= 'kevin peitersen'
+kevin.age= 39
+kevin.role= 'batsman'
+kevin.batting= 'right handed'
+kevin.bowling= 'right arm off break'
+
+var kohli= new CricketPlayer()
+kohli.full_name= 'virat kohli'
+kohli.age= 31
+kohli.role= 'top order batsman'
+kohli.batting= 'right handed'
+kohli.bowling= 'right arm meduim'
+
+var sachin= new CricketPlayer()
+sachin.full_name= 'sachin ramesh tendulkar'
+sachin.age= '46'
+sachin.role= 'batsman'
+sachin.batting= 'right handed'
+sachin.bowling= 'right arm medium, leg break, off break'
+
+function concrete(){
+    this.type
+    this.aggregadeRatio
+    this.cementRatio
+    this.strength
+    this.steel
+}
+
+var class_20 =new concrete()
+class_20.type ='c20'
+class_20.aggregadeRatio= 4
+class_20.cementRatio= 1
+class_20.strength= '20KN per sqmm'
+class_20.steel= true
+
+var class_30 =new concrete()
+class_30.type ='c30'
+class_30.aggregadeRatio= 1
+class_30.cementRatio= 1
+class_30.strength= '30KN per sqmm'
+class_30.steel= true
+
+var class_15 =new concrete()
+class_15.type ='c15'
+class_15.aggregadeRatio= 6
+class_15.cementRatio= 3
+class_15.strength= '15KN per sqmm'
+class_15.steel= false
 
 
