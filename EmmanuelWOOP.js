@@ -48,7 +48,7 @@ function continent(){
     this.numberOfCountries
     this.compassDirection
 }
-//Declaring and instantiating a variable
+//Declaring and creating an instance of object continent
 var europe = new continent()
 //Initialising variable attributes
     europe.name = "Europe"
@@ -64,7 +64,7 @@ var asia = new continent()
     asia.population = 3
     asia.numberOfCountries = 45
     asia.compassDirection = "East" 
-//Displaying instance variable
+//Displaying instance variables
 console.log(asia)
 
 var africa = new continent()
@@ -74,3 +74,76 @@ var africa = new continent()
     africa.numberOfCountries = 41
     africa.compassDirection = "North" 
 console.log(africa)
+
+//Defining object continent
+function song(){
+    this.name
+    this.duration
+    this.artist
+    this.genre
+    this.ratings
+}
+//Declaring and creating an instance of object continent
+var calipso = new song()
+//Initialising variable attributes
+    calipso.name = "Calipso"
+    calipso.duration = "3 minutes"
+    calipso.artist = "wuwiwuwi"
+    calipso.genre = "Pop"
+    calipso.ratings = "5/10"
+    calipso.log(europe)
+//Displaying instance variables
+console.log(calipso)
+
+var smoothCriminal = new song()
+    smoothCriminal.name = "Smooth Criminal"
+    smoothCriminal.duration = "2 minutes"
+    smoothCriminal.artist = "MJ"
+    smoothCriminal.genre = "Pop"
+    smoothCriminal.ratings = "7.5/10" 
+//Displaying instance variables
+console.log(smoothCriminal)
+
+var naki = new song()
+    africa.name = "Africa"
+    africa.duration = "5 minutes"
+    africa.artist = "lil dicky"
+    africa.genre = "afro beats"
+    africa.ratings = "6.3/10" 
+console.log(naki)
+
+//Defining object continent
+function movies(){
+    this.name
+    this.duration
+    this.artist
+    this.genre
+    this.ratings
+}
+//Declaring and creating an instance of object continent
+var orge = new movies()
+//Initialising variable attributes
+    orge.name = "The Orge"
+    orge.duration = "3 minutes"
+    orge.author = "ben"
+    orge.genre = "thriller"
+    orge.ratings = "5/10"
+//Displaying instance variables
+console.log(orge)
+
+var batman = new movies()
+    batman.name = "Smooth Criminal"
+    batman.duration = "2 minutes"
+    batman.author = "MJ sandy"
+    batman.genre = "horror"
+    batman.ratings = "7.5/10" 
+//Displaying instance variables
+console.log(batman)
+
+var flash = new movies()
+    flash.name = "Africa"
+    flash.duration = "5 minutes"
+    flash.author = "dony"
+    flash.genre = "comedy"
+    flash.ratings = "6.3/10" 
+console.log(flash)
