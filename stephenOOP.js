@@ -1,7 +1,7 @@
 /**
 Monday 10Feb2020 Object Assignment
 This assignment is themed aroung objects for the project of Free Slot, abbreviated to fs
-The practise focus is to declare up to 5 objects and print out their 5 properties **/
+The practise focus is to declare up to 5 objects and print out their 5 properties 
 
 console.log ("\nOBJECT ONE")
 var fsparking = {businessName:"Acacia Mall", location:"Acacia Avenue", slotCount:"91", manager:"Kasule", phoneNo:"+256-712-123456"}
@@ -41,6 +41,115 @@ console.log ("The User's name to settle payments for is: " + fscashModule.userNa
 console.log ("The Business Name where the user parked is: " + fscashModule.businessName)
 console.log ("Cash Balance on User credits before receiving hard cash is: " + fscashModule.cashlessBalance)
 console.log ("Bank Details of Parking are: " + fscashModule.bankDetails)
-console.log ("The Date and Time when the payment qualified: " + fscashModule.timeStamp)
+console.log ("The Date and Time when the payment qualified: " + fscashModule.timeStamp) **/
+
+/* Translate the above code to adapt to the class of Tuesday 11Feb2020
+Assignment: create a function and three corresponding instances for each object above */
+
+console.log ("\nOBJECT ONE adapted to method & instances\n")
+function fsparking () {
+	this.businessName
+	this.location
+	this.slotCount
+	this.manager
+	this.phoneNo
+}
+
+//Instance One
+var accaciaOne = new fsparking () 
+accaciaOne.businessName='Acacia Mall'
+accaciaOne.location='Acacia Avenue'
+accaciaOne.slotCount='91'
+accaciaOne.manager='Kasule'
+accaciaOne.phoneNo='+256-712-123456'
+
+//Test print out of instance one
+console.log ("There are parking slots at: " + accaciaOne.businessName)
+console.log (accaciaOne.businessName + " is found on: " + accaciaOne.location)
+console.log (accaciaOne.businessName + " parking has: " + accaciaOne.slotCount + " slots")
+console.log ("Business Manager's name is: " + accaciaOne.manager)
+console.log ("The manager's phone No. is: " + accaciaOne.phoneNo)
+
+//Instance Two
+var bukotoTwo = new fsparking () 
+bukotoTwo.businessName='Heights Apartments'
+bukotoTwo.location='Masanyalaze Lane'
+bukotoTwo.slotCount='31'
+bukotoTwo.manager='Amsugut'
+bukotoTwo.phoneNo='+256-782-123456'
+
+//Instance Three
+var muyengaOne = new fsparking () 
+muyengaOne.businessName='British School'
+muyengaOne.location='Lubobo Close'
+muyengaOne.slotCount='17'
+muyengaOne.manager='Kembabazi'
+muyengaOne.phoneNo='+256-792-123456'
+
+//OBJECT TWO to method & instance
+function fsuser () {
+	this.userName
+	this.phoneNo
+	this.phoneType
+	this.cashlessBalance
+	this.destination
+}
+
+//Instance One
+var userOne = new fsuser () 
+userOne.userName='Dean'
+userOne.phoneNo='+256-797-123456'
+userOne.phoneType='iPhone 5 SE'
+userOne.cashlessBalance='UGX 13,000'
+userOne.destination='Acacia Mall'
+
+//Instance Two
+var userOne = new fsuser () 
+userOne.userName='Donald'
+userOne.phoneNo='+255-797-123456'
+userOne.phoneType='Samsung Galaxy S11'
+userOne.cashlessBalance='UGX 7,900'
+userOne.destination='Heights Apartments'
+
+//Instance Three
+var userOne = new fsuser () 
+userOne.userName='Barbra'
+userOne.phoneNo='+253-797-123456'
+userOne.phoneType='iPhone 8 Plus'
+userOne.cashlessBalance='UGX 21,300'
+userOne.destination='British School'
+
+//OBJECT THREE to method & instance
+function fsparkingowner () {
+	this.ownerName
+	this.phoneNo
+	this.phoneType
+	this.parkingPlaces
+	this.bankDetails
+}
+
+//Instance One
+var ownerOne = new fsparkingowner () 
+ownerOne.ownerName='Salim Salim'
+ownerOne.phoneNo='+259-724-458123'
+ownerOne.phoneType='iPhone 7 Plus'
+ownerOne.parkingPlaces='3 Businesses"'
+ownerOne.bankDetails='Mercantile Bank 8967452301'
+
+//Instance Two
+var ownerOne = new fsparkingowner () 
+ownerOne.ownerName='Mutaaasa Kafeero'
+ownerOne.phoneNo='+256-414-453923'
+ownerOne.phoneType='One Plus One'
+ownerOne.parkingPlaces='19 Parking Areas"'
+ownerOne.bankDetails='Absa Bank 8967452301'
+
+//Instance Three
+var ownerOne = new fsparkingowner () 
+ownerOne.ownerName='Mary Poppins'
+ownerOne.phoneNo='+256-717-444423'
+ownerOne.phoneType='Samsung Galaxy Fold'
+ownerOne.parkingPlaces='9 Businesses'
+ownerOne.bankDetails='NC Bank 8967452301'
 
 console.log ("\nThank You\n")
