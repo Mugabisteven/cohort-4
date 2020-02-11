@@ -1,52 +1,55 @@
-// Declaring the function "tests",that takes two arguments i.e test1 and test2.
+// Defining the function "tests",that takes two parametersi.e test1 and test2.
 function tests(test1,test2) 
 {
-    // comparing test1 and test2,and assigned result to variable name greater.
+    // Declaring variable greater which is assigned to the function tests' result.
 let greater = test2>test1?test1:test2
 return greater
 
 }
-// Declaring the function "coursework",that takes an argument i.e cswork.
+// Defining the function "coursework",that takes a parameter cswork.
  function coursework(cswork) 
  {
-    // initianize variable coursework,add argument cswork to result from function "tests" which takes two arguments 80 and 80
+    // Initianize variable coursework to parameter cswork added with the result from calling function "tests" .
  let coursework = cswork + tests(80,80)
  
- // print the  result assigned to variable name 'coursework' on to the screen.
+ // Print the  result assigned to variable name 'coursework' on to the screen.
  console.log(coursework)
  return coursework
 
  }
-
+// Defining the function avg that takes a parameter "a".
 function avg(a)
 {
-   // Initializing variable avg assigned to operand coursework(90) divided with the  local argument "a".
+   // Declaring variable avg to a calling function coursework which is divided by a parameter "a".
 let avg =coursework(90)/a 
 return avg
 
 }
 
-// Declaring the function "crsmark" with the local argument "a".
+// Defining the function crsmark that takes single parameter "a".
 function crsmark(a)
 {
+// Declaring variable exm to a calling function avg which is multiplied by the parameter a percent.
+let exm = avg(2)*(a/100)
+return exm 
 
-let exm = avg(2)*(a/100) // Multiplying the operands avg(2) and (a/100) which is assigned to the initalized variable exm.
- return exm 
 }
-// Declaring the function exam that takes an argument "a"
+// Defining the function exam that takes a parameter "a"
 function exam(a)
 {
-let fexam = (60/100)*a // Initialize variable fexam,multipply an operand (60/100) with an argument "a" from function exam.
+   // Initialize variable fexam which is assigned to a parameter "a" of a function exam multiplied by 60 percent.
+let fexam = (60/100)*a 
 return fexam
 
 }
-// Declaring the function fnal.
+// Defining the function fnal that takes unknown parameter.
 function fnal()
 {
-   // Add the two operands,{exam(75) and crsmark(40)} and assigne it to the initiazed variable fmark.
-let fmark = exam(75)+crsmark(40) 
-// print the initiazed variable fmark result's on the screen.
+   // Declaring the variable fnal to calling function exam which is added with another calling function crsmark.
+let fmark = exam(75)+crsmark(40) // 
+// Print the initiazed variable fmark result's on the screen.
 console.log(fmark) 
 
 }
+// Invoking the function fnal.
 fnal()
