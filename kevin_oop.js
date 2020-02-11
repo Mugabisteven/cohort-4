@@ -1,4 +1,5 @@
-//Defining class Rover
+//object oriented programming in js
+//Defining object Rover with attributes
 let Rover = {
     name:"Opportunity",
     contractor:"Boeing",
@@ -8,12 +9,12 @@ let Rover = {
 }
 //Printing the object properties
 console.log(Rover.name)
-console.log(Rover.hdd_capcity)
-console.log(Rover.ram)
-console.log(Rover.video_graphics)
-console.log(Rover.color)
+console.log(Rover.contractor)
+console.log(Rover.distanceCovered)
+console.log(Rover.spaceCraft)
+console.log(Rover.operator)
 
-//Defining class Insects
+//Defining object Insects
 let Insects = {
     name:"bee",
     typeOfEye:"compound eyes",
@@ -28,7 +29,7 @@ console.log(Insects.numberOfLegs)
 console.log(Insects.numberOfBodyParts)
 console.log(Insects.numberOfAntenna)
 
-//Defining class Footballer
+//Defining object Footballer
 let Footballer = {
     name:"lionel messi",
     age:32,
@@ -43,7 +44,7 @@ console.log(Footballer.height)
 console.log(Footballer.weight)
 console.log(Footballer.rating)
 
-//Defining class CricketPlayer
+//Defining object CricketPlayer
 let CricketPlayer = {
     name:"Kevin Peitersen",
     age:39,
