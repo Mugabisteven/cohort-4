@@ -40,7 +40,7 @@
 //console.log(fruit.family)
 //redoing the previous work to have instances of 
 
-//defining a method for object fruit with five properties and creating three instances of this object.
+//Defining a method for object fruit with five properties and creating three instances of this object.
 function fruit()
 {
     this.name
