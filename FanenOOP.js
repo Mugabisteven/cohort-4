@@ -2,7 +2,7 @@
  Object Oriented programing in Javascript
  */
 
- //An object with a hospital value
+ //An object with a hospital property
  let hospital = {name:"love clinic", ward:"female", location:"kampala", status:"24/7", size:"very big",}
  //Display the hospital properties
  console.log(hospital.name)
@@ -38,7 +38,7 @@
  console.log(girl_friend.height)
 
 //Phones Object
- let phones ={name:"Techno", brand:"CamonX", color:"Black", price:"1million", camera:"20px",}
+ let phone ={name:"Techno", brand:"CamonX", color:"Black", price:"1million", camera:"20px",}
  //Displaying the values of the object (Phones)
  console.log(phones.name)
  console.log(phones.brand)
