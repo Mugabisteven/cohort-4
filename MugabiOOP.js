@@ -40,3 +40,96 @@ console.log(academia.pschool)
 console.log(academia.secondary)
 console.log(academia.tertiary)
 console.log(academia.university)
+   
+
+//// Tuesday's work
+
+
+/* Basically this is a template of other continent that would be called using var.
+function continent () 
+
+{
+    this.name = "Africa";
+    this.countriesnos = "54";
+    this.lakesnos = "34";
+    this.mountainnos = "24";
+    this.riversnos = "72";
+}
+console.log(continent.name)
+
+///This means var europe is creating another instance for example 
+var europe= new continent()
+console.log(europe.name)
+onsole.log(europe.countriesnos)
+onsole.log(europe.lakesnos)
+onsole.log(europe.riversnos)
+onsole.log(europe.mountainnos)
+// example 2
+var asia= new continent()*/
+
+ /*
+
+ /*Tuesday's assignment*/
+
+/* function beverageCo()
+{
+    this.name
+    this.brandColor
+    this.location
+    this.brands
+    this.founder
+}
+
+var cocaCola = new beverageCo()
+    cocaCola.name = 'cocaCola'
+    cocaCola.brandColor= 'red'
+    cocaCola.location= 'namanve'
+    cocaCola.brands= 'fanta'
+    cocaCola.founder = 'mugabi'
+
+var pepsi= new beverageCo()
+    
+
+console.log(cocaCola.name)
+
+
+function brewies()
+{
+    this.name
+    this.location
+    this.brands
+    this.md
+}
+var nilebrewies = new brewies()
+
+nilebrewies.name="nilebrewies"
+nilebrewies.location="Jinja"
+nilebrewies.brands ="blue"
+nilebrewies.md ="Ociici"
+
+console.log(nilebrewies.md)*/
+
+ /*  Wednesday's assighnment*/
+
+ function beverageCo (name,brandColor, location,brands,founder)
+ {
+     this.name
+     this.brandColor
+     this.location
+     this.brands
+     this.founder
+ }
+ 
+ var cocaCola = new beverageCo()
+     cocaCola.name = 'cocaCola'
+     cocaCola.brandColor= 'red'
+     cocaCola.location= 'namanve'
+     cocaCola.brands= 'fanta'
+     cocaCola.founder = 'mugabi'
+ 
+ var pepsi= new beverageCo("cocaCola","red","namanve","fanta","mugabi")
+     
+ 
+ console.log(cocaCola.name)
+ console.log(cocaCola.founder)
+ console.log(cocaCola.location)
