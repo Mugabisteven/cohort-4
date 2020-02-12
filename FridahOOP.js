@@ -104,6 +104,7 @@ Defining object beverages and assigning it to the diffrent properties.
 /**
 Defining constructor functions with 5 properties each and instantiating 3 objects for each.
 **/
+/**
 function hairstyle()
 {
 this.brand
@@ -205,6 +206,42 @@ console.log(drinking_water.manufacturing_company)
 console.log(drinking_water.packaging)
 console.log(drinking_water.bottle_size)
 console.log(drinking_water.price)
+**/
+function hairstyle(brand,length,colour,texture,origin)
+{
+this.brand=brand;
+this.length=length;
+this.colour=colour;
+this.texture=texture;
+this.origin=origin;
+}
+
+var braids= new hairstyle("darling","long","black","hard","Uganda")
+console.log(braids)
+
+var kinky = new hairstyle("blues","medium","brown","soft","China")
+console.log(kinky)
+
+var weave = new hairstyle("darling","short","black","soft","Uganda")
+console.log(weave)
+
+function beverage(name,manufacturing_company,packaging,bottle_size,price)
+{
+    this.name =name;
+	this.manufacturing_company=manufacturing_company;
+	this.packaging=packaging;
+	this.bottle_size=bottle_size;
+	this.price=price;	
+}
+
+var beer= new beverage("Nile stout","Uganda_breweries","bottled","350ml",4000)
+console.log(beer);
+
+var soda= new beverage("Sprite","Cocacola","cans","250ml",3000)
+console.log(soda)
+
+var drinking_water= new beverage("Rwenzori","Rwenzori_bottling_company","plastic_bottle","150ml",1000)
+console.log(drinking_water)
 
 
 
