@@ -38,7 +38,7 @@ console.log(song.artist)
 console.log(song.duration)
 console.log(song.ratings)
 console.log(song.size)
-**/
+
 
 //Defining object continent
 function continent(){
@@ -147,3 +147,69 @@ var flash = new movies()
     flash.genre = "comedy"
     flash.ratings = "6.3/10" 
 console.log(flash)
+*/
+
+
+
+//Defining object continent
+function continent(name, size, population, numberOfCountries, compassDirection){
+    this.name
+    this.size
+    this.population
+    this.numberOfCountries
+    this.compassDirection
+}
+//Declaring and creating an instance of object continent
+//Initialising object variable attributes
+var europe = new continent("Europe", 2, 7, 12, "West")
+    console.log(europe)
+
+var asia = new continent("Asia", 2, 3, 45, "East") 
+//Displaying instance variables
+    console.log(asia)
+
+var africa = new continent("Africa", 5, 33, 41, "North") 
+    console.log(africa)
+
+//Defining object continent
+function song(name, duration, artist, genre, ratings){
+    this.name
+    this.duration
+    this.artist
+    this.genre
+    this.ratings
+}
+//Declaring and creating an instance of object continent
+var calipso = new song("Calipso", "3 minutes", "wuwiwuwi", "Pop", "5/10")
+//Initialising variable attributes
+//Displaying instance variables
+    console.log(calipso)
+
+var smoothCriminal = new song("Smooth Criminal", "2 minutes", "MJ", "Pop", "7.5/10")
+//Displaying instance variables
+    console.log(smoothCriminal)
+
+var naki = new song("Africa", "5 minutes", "lil dicky", "afro beats", "6.3/10")
+    console.log(naki)
+
+//Defining object continent
+function movies(name, duration, author, genre, ratings){
+    this.name
+    this.duration
+    this.artist
+    this.genre
+    this.ratings
+}
+//Declaring and creating an instance of object continent
+var orge = new movies("The Orge", "3 minutes", "ben", "thriller", "5/10")
+//Initialising variable attributes
+//Displaying instance variables
+    console.log(orge)
+
+var batman = new movies("Smooth Criminal", "2 minutes", "MJ sandy", "horror", "7.5/10")
+
+//Displaying instance variables
+    console.log(batman)
+
+var flash = new movies("Africa", "5 minutes", "dony", "comedy","6.3/10")
+    console.log(flash)
