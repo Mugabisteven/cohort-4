@@ -78,7 +78,7 @@ console.log("The CEO of Apple is :" + technologies.CEO);
 console.log("Apple makes products like :" + technologies.product);
 */
 
-//initiallizing a function job which has instances like name, experience, level,pay and type
+//initiallizing a function job which has properties like name, experience, level,pay and type
 function job() {
   this.name
   this.experience
