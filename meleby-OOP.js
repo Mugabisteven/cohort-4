@@ -38,6 +38,30 @@ let player = {
  console.log("Its years of existence: " +competition.age)
  console.log("It is normally played at: " +competition.time)
 
+/* Instantiating three objects of stadium and also declaring and assigning values
+   to 5 properties of each*/
+var namboole = new stadium()
+namboole.team = 'Uganda Cranes'
+namboole.turf_type = 'natural'
+namboole.location = 'Uganda'
+namboole.capacity = '40,000'
+namboole.age = '40'
+
+var Allianz_Arena = new stadium()
+Allianz_Arena.team = 'Bayern Munich'
+Allianz_Arena.turf_type = 'artificial'
+Allianz_Arena.location = 'Germany'
+Allianz_Arena.capacity = '60,000'
+Allianz_Arena.age = '80'
+
+var Goodison_Park = new stadium()
+Goodison_Park.team = 'Everton'
+Goodison_Park.turf_type = 'artificial'
+Goodison_Park.location = 'England'
+Goodison_Park.capacity = '39,000'
+Goodison_Park.age = '128'
+
+
  /**Creating an object beer, initializing some of its properties and displaying them on the console **/
  let beer = {
      origin: "Jinja", name: "Nile", company: "uganda_breweries", abv: "7%", taste: "lovely" 
