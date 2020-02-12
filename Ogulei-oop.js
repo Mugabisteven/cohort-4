@@ -41,7 +41,9 @@ console.log("Esroma likes " +color.es+ ".")  */
 
 /* Through out the work bellow, we define different funtions with properties, instaciate different odjects to the defined functions and post results of 
 each of them to the console */
-function game(){
+
+
+/*function game(){
     this.no_officials
     this.no_players
     this.equipment
@@ -160,4 +162,82 @@ var apple =new tree()
 apple.min_height=5
 apple.friut_color='lightgreen'
 apple.fruit_taste='sweet'
-console.log(apple)
+console.log(apple) */
+
+//
+/*
+function game(no_officials, no_players,equipment){
+
+}
+
+
+
+function weapon(){
+    this.type
+    this.user
+    this.method
+}
+
+var sward=new weapon()
+sward.type='cutting'
+sward.user='asasin'
+sward.method='swinging'
+console.log(sward)
+
+var bomb= new weapon()
+bomb.type='spliting'
+bomb.user='soldier'
+bomb.method='setting'
+console.log(bomb)
+
+var gun= new weapon()
+gun.type='penetrating'
+gun.user='soldier'
+gun.method='shooting'
+console.log(gun)*/
+
+
+/* Through out different functions we are creating functions with parameters. 
+we are creating instances of the function name; with arguments
+we are also posting to the browser's console  */
+function Weapon(type,user,method){
+    this.type= type
+    this.user= user
+    this.method= method
+}
+
+var Sward = new Weapon("cutting","asassin","swinging")
+var bomb = new Weapon('a','b','c')
+var gun = new  Weapon('penetrating', 'soldir', 'shooting')
+console.log(Sward)
+console.log(bomb)
+console.log(gun)
+
+function game(name,officials,number_players){
+    this.name=name
+    this.officials=officials
+    this.number_players=number_players
+}
+
+var volley = new game('volleyball', 2, 6)
+var football=new game('u_20', 3, 22)
+var baco = new game ('basketball', 2, 14)
+console.log(volley)
+console.log(football)
+console.log(baco)
+
+function fruit(taste, color, type){
+    this.taste=taste
+    this.color=color
+    this.type=type
+}
+
+var mango=new fruit('sweeter when ripe', 'yellow when ripe', "drupe" )
+var orrange=new fruit('sweet', 'green', 'berry' )
+var carrot= new fruit('taste less', 'brown', 'berry')
+console.log(mango)
+console.log(orrange)
+console.log(carrot)
+
+
+
