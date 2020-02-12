@@ -152,4 +152,39 @@ ownerThree.phoneType='Samsung Galaxy Fold'
 ownerThree.parkingPlaces='9 Businesses'
 ownerThree.bankDetails='NC Bank 8967452301'
 
+/* Assignment: Translate the above code into a method that takes on parameters then declare the instance with coresponding 
+arguments*/
+function fsparking (businessName, location, slotCount, manager, phoneNo) {
+	this.businessName = businessName
+	this.location = location
+	this.slotCount = slotCount
+	this.manager = manager
+	this.phoneNo = phoneNo
+}
+var accaciaOne = new fsparking ('Acacia Mall','Acacia Avenue','91','Kasule','+256-712-123456')
+var bukotoTwo = new fsparking ('Heights Apartments','Masanyalaze Lane','31','Amsugut','+256-782-123456') 
+var muyengaOne = new fsparking ('British School','Lubobo Close','17','Kembabazi','+256-792-123456') 
+
+function fsuser (userName, phoneNo, phoneType, cashlessBalance, destination) {
+	this.userName = userName
+	this.phoneNo = phoneNo
+	this.phoneType = phoneType
+	this.cashlessBalance = cashlessBalance
+	this.destination = destination
+}
+var userOne = new fsuser ('Dean','+256-797-123456','iPhone 5 SE','UGX 13,000','Acacia Mall')
+var userTwo = new fsuser ('Donald','+255-797-123456','Samsung Galaxy S11','UGX 7,900','Heights Apartments') 
+var userThree = new fsuser ('Barbra','+253-797-123456','iPhone 8 Plus','UGX 21,300','British School') 
+
+function fsparkingowner (ownerName, phoneNo, phoneType, parkingPlaces, bankDetails) {
+	this.ownerName = ownerName
+	this.phoneNo = phoneNo
+	this.phoneType = phoneType
+	this.parkingPlaces = parkingPlaces
+	this.bankDetails = bankDetails
+}
+var ownerOne = new fsparkingowner ('Salim Salim','+259-724-458123','iPhone 7 Plus','3 Businesses','Mercantile Bank 8967452301')
+var ownerTwo = new fsparkingowner ('Mutaaasa Kafeero','+256-414-453923','One Plus One','19 Parking Areas','Absa Bank 8967452301') 
+var ownerThree = new fsparkingowner ('Mary Poppins','+256-717-444423','Samsung Galaxy Fold','9 Businesses','NC Bank 8967452301') 
+
 console.log ("\nThank You\n")
