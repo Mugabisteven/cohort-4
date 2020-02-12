@@ -1,4 +1,5 @@
-//A list of 5 Objects with their properties
+
+/*//A list of 5 Objects with their properties
 // Defining and declaring an object 'hotel' with 5 properties
 let hotel = {name:"Skyz", starRating:"4", location:"Kampala", amenities:"Swimming pool, bar, restuarant", owner:"Bitature"}
 
@@ -54,4 +55,45 @@ console.log("The name of this crash course is " + crashCourse.name)
 console.log("The duration of the course is " + crashCourse.duration)
 console.log("It is under the university called " + crashCourse.university)
 console.log("Located in " + crashCourse.location)
-console.log(" ")
+*/
+
+//created a new object laptop with object constructor
+//added 5 properties with this keyword
+function laptop(){
+    this.brand,
+    this.core,
+    this.color,
+    this.storageSize,
+    this.ram
+};
+
+//used the constructor object to create new laptop objects dell, toshiba and macbook
+var dell = new laptop()
+    dell.brand='Dell'
+    dell.core='core i3'
+    dell.color='black'
+    dell.storageSize='500GB Hard disk'
+    dell.ram='4GB RAM'
+
+var toshiba = new laptop()
+    toshiba.brand='Toshiba'
+    toshiba.core='core i5'
+    toshiba.color='white'
+    toshiba.storageSize='1TB Hard disk'
+    toshiba.ram='8GB RAM'
+
+var macBook = new laptop()
+    macBook.brand='Mac Book Pro'
+    macBook.core='core i7'
+    macBook.color='white'
+    macBook.storageSize='1TB Hard disk'
+    macBook.ram='16GB RAM'
+
+    console.log(dell.brand + " is a " + dell.core + " with the following specs: " +
+    dell.color + '; ' + dell.storageSize + '; ' + dell.ram)
+
+    console.log(toshiba.brand + " is a " + toshiba.core + " with the following specs: " +
+    toshiba.color + '; ' + toshiba.storageSize + '; ' + toshiba.ram)
+
+    console.log(macBook.brand + " is a " + macBook.core + " with the following specs: " +
+    macBook.color + '; ' + macBook.storageSize + '; ' + macBook.ram)
