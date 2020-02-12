@@ -47,6 +47,7 @@ let bulb = {color:"white", wattage:"40amps",Diameter:"16mm",weight:"0.4kg",make:
 
 
     //Another way of expressing features in objects 
+    /*
     //Defined object animal
       function animal()
      {
@@ -214,8 +215,8 @@ let bulb = {color:"white", wattage:"40amps",Diameter:"16mm",weight:"0.4kg",make:
      {
       //Object house has 5 features
      this.location
-     this.no_rooms
-     this.type
+     this.no_bedrooms
+     this.no_kitchens
      this.color
      this.no_bathrooms
      }
@@ -224,7 +225,7 @@ let bulb = {color:"white", wattage:"40amps",Diameter:"16mm",weight:"0.4kg",make:
      var flat=new house()
      flat.location="mbuya"
      flat.no_rooms=3
-     flat.kitchen=2
+     flat.no_kitchens=2
      flat.color="white"
      flat.no_bathrooms=2
      //Printed out all the 5 features
@@ -233,8 +234,8 @@ let bulb = {color:"white", wattage:"40amps",Diameter:"16mm",weight:"0.4kg",make:
      //Declaring bungalow and instantalizing it to object new house
      var bungalow=new house()
      bungalow.location="bukasa"
-     bungalow.no_rooms=3
-     bungalow.kitchen=2
+     bungalow.no_bedrooms=3
+     bungalow.no_kitchens=2
      bungalow.color="white"
      bungalow.no_bathrooms=2
      //Printed out all the 5 features
@@ -244,8 +245,79 @@ let bulb = {color:"white", wattage:"40amps",Diameter:"16mm",weight:"0.4kg",make:
      var apartment=new house()
      apartment.location="mutungo"
      apartment.no_rooms=4
-     apartment.kitchen=1
+     apartment.no_kitchens=4
      apartment.color="grey"
      apartment.no_bathrooms=2
      //Printed out all the 5 features
      console.log(apartment)
+*/
+
+//Another way of sumarising features
+//Defined object house with parameters
+function house(location,no_bathrooms,no_bedrooms,color,no_kitchens)
+{
+this.location=location
+this.no_bathrooms=no_bathrooms
+this.no_bedrooms=no_bedrooms
+this.color=color
+this.no_kitchens=no_kitchens
+}
+//Declared flat and instantalised it to object new house with arguments
+var flat=new house("muyenga",4,6,"grey",2)
+//Printed out 5 features
+console.log(flat)
+
+//Defined object movies with parameters
+function movies(name,size,duration,ratings,year)
+{
+this.name=name
+this.size=size
+this.duration=duration
+this.ratings=ratings
+this.year=year
+}
+//Declared action and instantalised it to object new movies with arguments
+var action=new movies("Terminator","780mbs","140mins","7/10",2019)
+//Printed out 5 features
+console.log(action)
+
+//Defined object animal with parameters
+function animal(name,size,type,age,category)
+{
+this.name=name
+this.size=size
+this.type=type
+this.age=age
+this.category=category
+}
+//Declared dog and instantalised it to object new animal with arguments
+var dog=new animal("Rex","medium","Mongolian",6,"domestic")
+//Printed out 5 features
+console.log(dog)
+
+//Defined object phone with parameters
+function phone(capacity,batterylife,color,version,language)
+{
+this.capacity=capacity
+this.batterylife=batterylife
+this.color=color
+this.version=version
+this.language=language
+}
+//Declared tecno and instantalised it to object new phone with arguments
+var tecno=new phone("8gb","4500mA","black",7,"english")
+//Printed out 5 features
+console.log(tecno)
+
+//Defined object school with parameters
+function school(location,no_teachers,no_classrooms,population,no_computers)
+{
+this.location=location
+this.no_teachers=no_teachers
+this.no_classrooms=no_classrooms
+this.population=population
+this.no_computers=no_computers
+}
+var uict=new school("Nakawa",17,19,356,57)
+//Printed out 5 features
+console.log(uict)
