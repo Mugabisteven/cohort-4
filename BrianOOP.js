@@ -97,12 +97,24 @@
 // console.log("The bank's year of incorporation is: " + bank.year);
 // console.log(" ");
 
-let facilators = new (function Facilators() {})();
+// let facilators = new (function Facilators() {})();
 
-facilators.name = "Ozzy@ozzy";
-facilators.subject = "Javascript";
-facilators.period = "11:00 - 13:00";
-facilators.rating = 4.5;
-facilators.education = "Msc. Computer Science";
+// facilators.name = "Ozzy@ozzy";
+// facilators.subject = "Javascript";
+// facilators.period = "11:00 - 13:00";
+// facilators.rating = 4.5;
+// facilators.education = "Msc. Computer Science";
 
-console.log(facilators);
+// console.log(facilators);
+
+function Plant(color, height, age, seeds, nutrients) {
+  this.color = color;
+  this.height = height;
+  this.age = age;
+  this.seeds = seeds;
+  this.nutrients = nutrients;
+}
+
+let maize = new Plant("green", 120, 1, "monocotlydenous", "carbohydrates");
+
+console.log(maize);
