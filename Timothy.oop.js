@@ -78,7 +78,7 @@ console.log("The CEO of Apple is :" + technologies.CEO);
 console.log("Apple makes products like :" + technologies.product);
 */
 
-//initiallizing a function job which has properties like name, experience, level,pay and type
+/**initiallizing a function job which has properties like name, experience, level,pay and type
 function job() {
   this.name
   this.experience
@@ -117,5 +117,33 @@ teacher.pay = "700000"
 teacher.type = "school"
 
 //printing the output of teacher
-console.log(teacher.name)
+console.log(teacher.name)*/
+
+/**Defining and initiallizing of a method job which has five properties, and also posseses 
+ * five instances. then after the initialization, a printout is done for each instance.
+ */
+function job (name, experience, level, pay, type)
+{
+this.name 
+this.experience 
+this.level 
+this.pay 
+this.type
+
+}
+var country_director = new job()
+country_director.name = "country director"
+country_director.experience = "5years"
+country_director.level= "senior"
+country_director.pay = "15000000"
+country_director.type = "NGO"
+console.log(country_director)
+
+var teacher = new job()
+teacher.name = "Maths teacher"
+teacher.experience = "1year"
+teacher.level= "junior"
+teacher.pay = "700000"
+teacher.type = "school"
+console.log(teacher)
 
