@@ -71,3 +71,9 @@ Goodison_Park.age = '128'
  console.log("The manufacturing company is: " +beer.company)
  console.log("Its alcohol content is: " +beer.abv)
  console.log("This drink tastes " +beer.taste)
+
+/*Instantiating another stadium object and assigning values to its properties
+  as paramters*/
+
+ var Signal_Iduna_Park = new stadium('Borussia Dortmund', 'artificial', 'Germany', '50,000', '98') 
+
