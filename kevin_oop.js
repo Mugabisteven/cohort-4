@@ -78,6 +78,7 @@ console.log(Concrete.steal)
 
 /*Defining objects and creating three instances of 
 the objects*/
+/*
 function rover(){
     this.name
     this.contractor
@@ -226,5 +227,73 @@ class_15.aggregadeRatio= 6
 class_15.cementRatio= 3
 class_15.strength= '15KN per sqmm'
 class_15.steel= false
+*/
+
+/*Definig 5 objects with 3 instances*/
+
+function rover(name,contractor,distanceCovered,spaceCraft,operator){
+    this.name= name
+    this.contractor= contractor
+    this.distanceCovered= distanceCovered
+    this.spaceCraft= spaceCraft
+    this.operator=operator
+}
+var opportunity = new rover('opportunity','boeing','45.16km','rover','NASA')
+var spirit= new rover('spirit','boeing','7.73km','rover','NASA')
+var curiosity = new rover('curiosity','boeing','22.21km','rover','NASA')
+
+
+function Footballer(name,age,height,weight,rating){
+    this.name= name
+    this.age= age
+    this.height= height
+    this.weight= weight
+    this.rating=rating
+}
+var messi= new Footballer('lionel messi','32','170cm','72kg','94')
+var ronaldo= new Footballer('cristino ronaldo','35','187cm','83kg','93')
+var neymar= new Footballer('neymar jr','28','175cm','68kg','92')
+
+function Insect(order,typeOfEye,numberOfBodyParts,numberOfLegs,numberOfAntenna){
+    this.order= order
+    this.typeOfEye= typeOfEye
+    this.numberOfBodyParts= numberOfBodyParts
+    this.numberOfLegs= numberOfLegs
+    this.numberOfAntenna= numberOfAntenna
+}
+var bee= new Insect('hymenoptera','compound','3','3pairs','2')
+var grasshopper= new Insect('orthoptera','compound','3','3pairs','2')
+var termite= new Insect('blattodea','simple','2','3pairs','2')
+
+function CricketPlayer(full_name,age,role,batting,bowling){
+    this.full_name= full_name
+    this.age= age 
+    this.role= role
+    this.batting= batting
+    this.bowling= bowling
+}
+var kevin= new CricketPlayer('kevin peitersen','39','batsman','right handed','right arm off break')
+var kohli= new CricketPlayer('virat kohli','39','top order batsman','right handed','right arm medium')
+var sachin=new CricketPlayer(
+    'sachin ramesh tendular',
+    '46',
+    'batsman',
+    'right handed',
+    'right arm meduim, leg break,off break'
+)
+
+function concrete(type,aggregadeRatio,cementRatio,strength,steel){
+    this.type= type
+    this.aggregadeRatio= aggregadeRatio
+    this.cementRatio= cementRatio
+    this.strength= strength
+    this.steel= steel
+}
+
+var class_20 =new concrete('c20','4','1','20KN per sqmm','true')
+var class_30= new concrete('c30','1','1','30KN per sqmm','true')
+var class_15= new concrete('c15','6','3','15KN per sqmm','false')
+
+console.log(class_20)
 
 
