@@ -16,6 +16,11 @@ Declaring variables to store form data
   var umsex = document.registration.msex;
   var ufsex = document.registration.fsex;
 
+  /*
+   *Calling the respective validation methods for each element
+   *if the preceding validation method returns true
+   *else return false
+   */
   if (userid_validation(uid, 5, 12)) {
     if (passid_validation(passid, 7, 12)) {
       if (allLetter(uname)) {
