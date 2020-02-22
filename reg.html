@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta
+      name="content"
+      content="width=device-width, initial-scale=1.0"
+      charset="utf-8"
+    />
+    <title>Accessing elements in html (HTML dom)</title>
+
+    <style type="text/css">
+      html {
+        font-family: sans-serif;
+      }
+      form {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 0 15px;
+        font-weight: 90px;
+      }
+    </style>
+  </head>
+  <body onload="document.loanform.firstid.focus();">
+    <form
+      name="loanform"
+      onsubmit="return formValidation();"
+      style="background-color:beige;border: 10px solid teal;border-radius: 10px;"
+    >
+      <h1>Loan Registration Form</h1>
+      <label for="firstid">First Name</label>
+      <input
+        style="margin-left: 20px; "
+        type="text"
+        name="firstid"
+      /><br /><br />
+
+      <label for="lastid">Last Name</label>
+      <input style="margin-left: 20px;" type="text" name="lastid" /><br /><br />
+
+      <label for="">Nationality</label>
+      <input style="margin-left: 26px;" type="text" name="origin" /><br /><br />
+
+      <label for="">Occupation</label>
+      <input style="margin-left: 20px;" type="text" name="job" />
+      <br /><br />
+
+      <label for="email">Email</label>
+      <input
+        style="margin-left: 60px;"
+        type="text"
+        name="email"
+        placeholder="Enter email"
+      /><br /><br />
+
+      <label for="">Telephone</label>
+      <input style="margin-left: 25px;" type="text" name="tel" /><br /><br />
+      <label>Address</label>
+      <input style="margin-left: 40px;" type="text" name="address" />
+
+      <br /><br />
+      <label for="">Loan Amount</label>
+      <input style="margin-left: 5px;" type="text" name="amount" /><br /><br />
+      <label style="margin-right: 10px;" for="">Gender</label>
+      <label for="">Male</label>
+      <input type="radio" name="msex" value="" />
+
+      <label for="">Female</label>
+      <input type="radio" name="fsex" value="" /><br /><br />
+
+      <label style="position: relative;bottom: 140px;" for="">About</label>
+      <textarea name="about" id="" cols="30" rows="10"></textarea>
+      <br /><br />
+
+      <label for="">Date of issue</label>
+      <input
+        style="margin-left: 7px;"
+        type="text"
+        name="date"
+        placeholder=""
+      /><br /><br />
+
+      <button style="color: blue;" type="submit" name="submit">Submit</button>
+      <button style="margin-left: 350px;color: crimson" ;>Cancel</button>
+    </form>
+    <script src="reg.js"></script>
+  </body>
+</html>
