@@ -24,26 +24,46 @@ function formValidation() {
     var dateday = document.registration.day;
     var dateyear = document.registration.year;
     var marrystat = document.registration.mstatus;
-    var passid = document.registration.passid;
-    var uname = document.registration.username;
+    var cemail = document.registration.email;
+    var pnum = document.registration.phoneno;
     var nid = document.registration.nin;
     var uadd = document.registration.address;
-    var ucountry = document.registration.country;
-    var pnum = document.registration.phoneno;
-    var cemail = document.registration.email;
+    var loanp = document.registration.lpurpose;
+    var loana = document.registration.lamount;
+
+    var durat = document.registration.duration;
+    var moninc = document.registration.mincome;
+    var collnam = document.registration.cname;
+    var collval = document.registration.cvalue;
+    
     var umsex = document.registration.msex;
     var ufsex = document.registration.fsex; 
+    
+    var passid = document.registration.passid;
+    var uname = document.registration.username;
+    var ucountry = document.registration.country;
     if (fullname_validation(fname)) {
         if (monthselect(datemonth)) {
             if (dayselect(dateday)) {
                 if (yearselect(dateyear)) {
                     if (validsex(umsex, ufsex)) {
-                        if (marryselect(marrystat)) {
+                        if (pickselect(marrystat)) {
                             if (ValidateEmail(cemail)) {
                                 if (allnumeric(pnum)) {
                                     if (alphanumeric(nid)) {
                                         if (alphanumeric(uadd)) {
-                                            //
+                                            if (alphanumeric(loanp)) {
+                                                if (allnumeric(loana)) {
+                                                    if (pickselect(durat)) {
+                                                        if (allnumeric(moninc)) {
+                                                            if (alphanumeric(collnam)) {
+                                                                if (allnumeric(collval)) {
+                                                                }
+                                                            } 
+                                                        }
+                                                    } 
+                                                } 
+                                            }
                                         }
                                     }
                                 }
@@ -116,30 +136,16 @@ function fullname_validation(fname) {
     }
 }
 
-function alphanumeric(uadd) {
+function alphanumeric(numword) {
     var letters = /^[0-9a-zA-Z]+$/;
-    if (uadd.value.match(letters)) {
+    if (numword.value.match(letters)) {
         alert('Form Succesfully Submitted');
         window.location.reload()
         return true;
     }
     else {
-        alert('User address must have alphanumeric characters only');
-        uadd.focus();
-        return false;
-    }
-}
-
-function alphanumeric(wnum) {
-    var letters = /^[0-9a-zA-Z]+$/;
-    if (wnum.value.match(letters)) {
-        alert('Form Succesfully Submitted');
-        window.location.reload()
-        return true;
-    }
-    else {
-        alert('User address must have alphanumeric characters only');
-        wnum.focus();
+        alert('Your entry must have alphanumeric characters only');
+        numword.focus();
         return false;
     }
 }
@@ -155,10 +161,10 @@ function countryselect(ucountry) {
     }
 }
 
-function marryselect(marrystat) {
-    if (marrystat.value == "Default") {
-        alert('Select your status from the list');
-        marrystat.focus();
+function pickselect(selectstat) {
+    if (selectstat.value == "Default") {
+        alert('Please select from the list');
+        selectstat.focus();
         return false;
     }
     else {
@@ -199,27 +205,6 @@ function yearselect(dateyear) {
     }
 }
 
-function validsex(umsex, ufsex) {
-    x = 0;
-
-    if (umsex.checked) {
-        x++;
-    } 
-    if (ufsex.checked) {
-        x++;
-    }
-    if (x == 1) {
-        alert('Form Succesfully Submitted');
-        window.location.reload();
-        return true;
-    }
-    else {
-        alert('Select Male/Female');
-        umsex.focus();
-        return fasle;
-    }
-}
-
 function allnumeric(nums) {
     var numbers = /^[0-9]+$/;
     if (nums.value.match(numbers)) {
@@ -245,23 +230,26 @@ function ValidateEmail(cemail) {
 
 } 
 
+function validsex(umsex, ufsex) {
+    x = 0;
 
-// function validsex(umsex, ufsex) {
-//     x = 0;
+    if (umsex.checked) {
+        x++;
+    } if (ufsex.checked) {
+        x++;
+    }
+    if (x == 0) {
+        alert('Select Male/Female');
+        umsex.focus();
+        return false;
+    }
+    else {
+        //newFunction();
+        return true;
+    }
 
-//     if (umsex.checked) {
-//         x++;
-//     } if (ufsex.checked) {
-//         x++;
-//     }
-//     if (x == 0) {
-//         alert('Select Male/Female');
-//         umsex.focus();
-//         return false;
-//     }
-//     else {
-//         alert('Form Succesfully Submitted');
-//         window.location.reload()
-//         return true;
-//     }
-// }
+    function newFunction() {
+        alert('Form Succesfully Submitted');
+        window.location.reload();
+    }
+}
