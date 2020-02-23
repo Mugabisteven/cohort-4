@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Form</title>
+
+    <style>
+        form{
+            background-color: lightgray;
+            width: 50%;
+            margin: auto;
+            padding: 40px;
+            line-height: 4px;
+            font-size: 13px;
+        }
+
+        .button{
+            background-color: gray;
+            color: white;
+            padding: 5px;
+            width: 20%;
+            text-align: center;
+        }
+
+        input{
+            width: 60%;
+        }
+        textarea{
+            width: 60%;
+        }
+    </style>
+
+</head>
+<body>
+    <form name="loan">
+        
+        <h1 style="font-size: 10px;">Complete this form; get your loan!</h1>
+
+        <h3>Your Name:</h13> <br><br>
+        <input type="text" id="nm" name="name"><small id="ename"></small><br><br>
+        
+        <h3>Age:</h3>
+        <input type="number" value="Age" name="age">
+        <h3>Email:</h3>
+        <input type="email" name="mail">
+        <h3>Contact:</h3>
+        <input type="number" name="contact">
+
+        <h3>Gender:</h3>
+        <label>
+            <input id="male" style="width: 10%;" type="radio" value="Malae" name="rating" >Male
+            <input id="female" style="width: 10%;" type="radio" value="Famale" name="rating" >Female
+        </label>
+
+        <h3>Nationality:</h3>
+        <input type="text" name="nationality">
+        <h3>NIN:</h3>
+        <input type="text" name="nin">
+        <br><br>
+
+        <h3>Amount:</h3>
+        <input type="number" name="amount">
+
+        <h3> Date of return:</h3>
+       <input type="date"><br>
+
+
+        <input type="submit" class="button" value="submit" onclick="validate();">
+        <input type="button" class="button" value="cancel">
+        <br> <br>,
+
+        <footer>
+            This form is  &copy; for East Traders limited.
+        </footer>
+
+
+    </form>
+    <script src="validate.js"></script>
+</body>
+
+
+</html>
