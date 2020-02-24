@@ -1,0 +1,162 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Osman : Loan Payment Form</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div style="border: 1px solid black;">
+      <form>
+        <table>
+          <tbody>
+            <tr>
+              <td>Name :</td>
+              <td>
+                <input
+                  type="text"
+                  name="username"
+                  id="username"
+                  placeholder="John Doe"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Email :</td>
+              <td>
+                <input
+                  type="email"
+                  name="useremail"
+                  id="useremail"
+                  placeholder="johndoe@gmail.com"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Contact :</td>
+              <td>
+                <input
+                  type="tel"
+                  name="phonenumber"
+                  id="phonenumber"
+                  placeholder="07******"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Address :</td>
+              <td>
+                <input
+                  type="text"
+                  name="useraddress"
+                  id="useraddress"
+                  placeholder="Kampala, Uganda"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Account Number :</td>
+              <td>
+                <input
+                  type="number"
+                  name="account_number"
+                  id="account_number"
+                  placeholder="600*******"
+                  min="0"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Loan Amount:</td>
+              <td>
+                <input
+                  type="number"
+                  name="loan_amount"
+                  id="loan_amount"
+                  placeholder="1,000,000 (UGX)"
+                  min="1000000"
+                />
+              </td>
+              <td>Issuing date :</td>
+              <td>
+                <input type="date" name="issuing_date" id="issuing_date" />
+              </td>
+            </tr>
+            <tr>
+              <td>Installments :</td>
+              <td>
+                <input
+                  type="number"
+                  name="installment"
+                  id="installment"
+                  placeholder="200,000 (UGX)"
+                  min="50000"
+                />
+              </td>
+
+              <td>
+                Start Date:
+              </td>
+              <td>
+                <input type="date" name="start_date" id="start_date" required />
+              </td>
+              <td>Payment interval (days) :</td>
+              <td>
+                <input
+                  type="number"
+                  name="payemnt_interval"
+                  id="payemnt_interval"
+                  placeholder="14"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Collateral :</td>
+              <td><input type="file" name="collateral" id="collateral" /></td>
+            </tr>
+            <tr>
+              <td>Justification :</td>
+              <td>
+                <input
+                  type="text"
+                  name="loan_justification"
+                  id="loan_justification"
+                  placeholder="Justify the reason for the loan"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Terms and Conditions :</td>
+              <td>
+                <label for="agree">Agree</label>
+                <input type="radio" name="terms" id="agree" value="agree" />
+              </td>
+              <td>
+                <label for="disagree">Disagree</label>
+                <input
+                  type="radio"
+                  name="terms"
+                  id="disagree"
+                  value="disagree"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <div id="errors"></div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="submit" value="SUBMIT" id="btn_submit" />
+              </td>
+              <td><input type="reset" value="CANCEL" /></td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+    </div>
+    <!-- The manipulating javascript fiile -->
+    <script src="./index.js"></script>
+  </body>
+</html>
