@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> LOAN REGISTRATION FORM</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <style>
+      h1{text-align: center;font-size: 40px;}
+      body{background-color: rgb(114, 101, 101);margin-left: 380px;}
+      h1{margin-bottom: 20px; margin-top: 20px;}
+    </style>
+</head>
+<body>
+    <div class="container ">
+        <div class="row height-30px ">
+            
+              <form name="loan">
+              <h1 id="text">Contact Information</h1>
+            <div class="row">
+              <div class="col-2">
+                <label ><strong>Name:</strong></label>
+              </div>
+              <div class="col-5 pr-70px">
+              <div class="form-group">
+                <label for="surname"><strong> Sur Name:</strong></label>
+                <input type="surname" class="form-control" id="surname" name="surname"></input>
+              </div>
+            </div>
+            <div class="col-5">
+              <div class="form-group">
+                <label for="givenname"><strong>Given Name:</strong></label>
+                <input type="givenname" class="form-control" id="givenname" name="givenname"></input>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-2 ">
+              <label for="birth date"><strong>Birth date:</strong></label>
+            </div>
+            <div class="col-10">
+          <div class="form-group pl-30"size="10">
+            <input type="date" class="form-control" id="Birth date" name="Birth date"></input>
+            </div>
+          </div></div>
+
+        <div class="row">
+          <label for="inputAddress"><strong>Gender:<strong></label><br/>
+          <div id="gender">
+            <input type="radio" name="msex"><label class="ss">Male</label>
+            <input type="radio" name="fsex"><label>Female</label>         
+          </div>
+        </div>
+
+         
+            <div class="row">
+              <div class="col-2">
+                <label><strong>Marital Status:</strong></label>
+              </div>
+              <div class="col-10">
+              <div class="form-group">
+                <input type="Marital status" class="form-control" id="Marital status" name="Marital status"></input>
+              </div>
+            </div>
+            </div>
+            
+            <div class="row">
+              <div class="col-2">
+              <label><strong>phone:</strong></label>
+            </div>
+              <div class="col-5">
+                <div class="form-group">  
+                  <label for="phone"><strong>Area code</strong></label>  
+                <input type="phone" class="form-control" id="phone" name="phone"></input>
+              </div> 
+            </div> 
+                <div class="col-5">
+                <label for="phone"><strong>phone Number</strong></label>
+                <input type="phone" class="form-control" id="phone" name="phone"></input>
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="col-2 pr-2">
+                <label><strong>Adress:</strong></label>
+              </div>
+              <div class="col-5">
+            <div class="form-group">
+              <lable for="Adress"><strong>Street Adress</strong></lable>
+              <input type="Adress" class="form-control" id="Adress" name="Adress"></input>
+              
+            </div>
+          </div>
+          </div><div class="row">
+          <div class="col-2">
+            <label><strong>Email:</strong></label>
+          </div>
+          <div class="col-10">
+          <div class="form-group ">
+            <label for="email"><strong>Email address:</strong></label>
+            <input type="email" class="form-control"id="email" name="email">
+          </div>
+        </div>
+          </div>
+          <h1><strong>Employment Information:</strong></h1>
+            <div class="row">
+              <div class="col-2" >
+                 <label style="padding-bottom: 10px;"><strong>Present Employment:</strong></label>
+              </div>
+                <div class="col-10 mr-40px">
+                  <input type="Present Employment" class="form-control" id="Present Employment" name="Present Employment">
+                </input>
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-2">
+                 <label><strong>Occupation:</strong></label>
+              </div>
+                <div class="col-10 mr-50px pb-5px">
+                  <input type="Occupation" class="form-control"id="Occupation" name="Occupation"></input>
+                </div>
+            </div>
+            <div class="row " style="margin-top: 20px;">
+              <div class="col-2">
+                 <label><strong>Gross Monthly Income:</strong></label>
+              </div>
+                <div class="col-10 mr-50px pb-5px">
+                  <input type="Gross Month Income" class="form-control" id="Gross Monthly Income" name="Gross Monthly Income">
+                </input>
+                </div>
+            </div>
+                
+               
+                <button type="submit" class="btn btn-info mb-5px" 
+                style="margin-left:150px; margin-bottom: 90px;"  onclick="validate()">Submit</button>
+                <butto type="cancele"class="btn btn-info "style="margin-left: 90px; margin-bottom: 90px;">Cancele</button>
+                
+              </form>
+              
+        </div>
+    </div>
+    <script src="./validate.js"></script>
+</body>
+</html>
+
+
+
+
+
+ 
