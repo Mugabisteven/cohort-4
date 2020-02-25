@@ -1,0 +1,109 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <div id="form_container">
+      <label for="form" id="form_label"
+        >Grouped form controls with two long legend:</label
+      >
+      <form id="form">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <table>
+            <tbody>
+              <tr>
+                <td>First name</td>
+                <td><input type="text" name="firstname" id="firstname" /></td>
+              </tr>
+              <tr>
+                <td>Last name</td>
+                <td><input type="text" name="lastname" id="lastname" /></td>
+              </tr>
+              <tr>
+                <td>Street</td>
+                <td><input type="text" name="street" id="street" /></td>
+              </tr>
+              <tr>
+                <td>City</td>
+                <td><input type="text" name="city" id="city" /></td>
+              </tr>
+            </tbody>
+          </table>
+        </fieldset>
+
+        <fieldset>
+          <legend>Additional details</legend>
+          <table>
+            <tbody>
+              <tr>
+                <td>Biograpghy</td>
+                <td>
+                  <textarea
+                    name="biography"
+                    id="biography"
+                    cols="30"
+                    rows="10"
+                  ></textarea>
+                </td>
+              </tr>
+              <tr>
+                <td>Image</td>
+                <td><input type="file" name="image" id="image" /></td>
+              </tr>
+              <tr>
+                <td>Age Group</td>
+                <td>
+                  <select name="agegroup" id="agegroup">
+                    <option value="0-9">0 to 9 Years</option>
+                  </select>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </fieldset>
+        <fieldset>
+          <legend>Interests</legend>
+          <table>
+            <tbody>
+              <tr>
+                <td>Hobbies</td>
+                <td>
+                  <select name="hobbies" id="hobbies" multiple>
+                    <option value="playingsoccer">Playing Soccer</option>
+                    <option value="dancing">Dancing</option>
+                    <option value="gardening">Gardening</option>
+                    <option value="watchingmovies">Watching Movies</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>Favourite Car?</td>
+                <td>
+                  <select name="car" id="car">
+                    <option value="volvo">Volvo</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>Favourite Public transport?</td>
+                <td>
+                  <select name="transport" id="transport" multiple>
+                    <optgroup label="Transport">
+                      <option value="train">Train</option>
+                      <option value="bus">Bus</option>
+                    </optgroup>
+                    <optgroup label="Water"> </optgroup>
+                  </select>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
